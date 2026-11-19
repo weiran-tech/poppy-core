@@ -1,38 +1,39 @@
 {
-    "name": "poppy/core",
-    "description": "An admin plugin for poppy.",
-    "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "Duoli",
-            "email": "zhaody901@126.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.4",
-        "ext-bcmath": "*",
-        "predis/predis": "~1.1",
-        "guzzlehttp/guzzle": "^6.3|^7.3"
+  "name": "poppy/core",
+  "description": "An admin plugin for poppy.",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Duoli",
+      "email": "zhaody901@126.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-bcmath": "*",
+    "predis/predis": "~1.1",
+    "guzzlehttp/guzzle": "^6.3|^7.3"
+  },
+  "require-dev": {
+    "zircote/swagger-php": "^4.11",
+    "doctrine/annotations": "^1.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "Poppy\\Core\\": "src/"
     },
-    "require-dev": {
-        "zircote/swagger-php": "^4.11",
-        "doctrine/annotations": "^1.14"
-    },
-    "autoload": {
-        "psr-4": {
-            "Poppy\\Core\\": "src/"
-        },
-        "files": [
-            "src/Support/functions.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Poppy\\Core\\Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "preferred-install": "dist"
-    },
-    "minimum-stability": "dev"
+    "files": [
+      "src/Support/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Poppy\\Core\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "version": "4.3.0"
 }
